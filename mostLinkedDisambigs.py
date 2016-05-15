@@ -12,4 +12,5 @@ with cur:
 	cur.execute(sql)
 	data = cur.fetchall()
 
-print json.dumps(data, ensure_ascii=False)
+for row in data:
+	print "# [[" + row[1] + "]] (" + row[0] + " odkazů)"
