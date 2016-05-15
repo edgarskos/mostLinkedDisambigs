@@ -13,4 +13,4 @@ with cur:
 	data = cur.fetchall()
 
 for row in data:
-	print "# [[" + row[1] + "]] (" + row[0] + " odkazů)"
+	print "# [[" + row[1] + "]] (" + str(row[0]) + " odkazů)"
